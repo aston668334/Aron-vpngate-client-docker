@@ -25,3 +25,10 @@ services:
     build: 
       context: .
       dockerfile: ./Dockerfile
+
+networks:
+  vpn:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.2.0.0/16
