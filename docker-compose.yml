@@ -21,7 +21,8 @@ services:
     stdin_open: true
     tty: true
     restart: always
-
+    networks:
+      - vpn
     build: 
       context: .
       dockerfile: ./Dockerfile
